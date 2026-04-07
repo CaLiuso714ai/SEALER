@@ -1,0 +1,71 @@
+{
+  "status": "INDEX_ONLY",
+  "anti_bloat_rule": "Excluded source artifacts are indexed here with hashes. They are not embedded in the compact spine to prevent bloat.",
+  "sources": [
+    {
+      "filename": "AMD-Omega-v7-Interactive-Blueprint-Engine-PRD-v1.docx",
+      "sha256": "962efa78c1dc84dd41b5c49e57070546b79050ba73feb299839499326133ffab",
+      "size_bytes": 41413
+    },
+    {
+      "filename": "AMD-Omega-v7-Dual-Engine-PRD-v2.docx",
+      "sha256": "02d91419b882bd46c6734c176fb7e5bc61406bd5ef5670ec9e285d862d3491f5",
+      "size_bytes": 42166
+    },
+    {
+      "filename": "AMD-Omega-OmegaKernel-Dual-Engine-Monolith-Runtime-v1.9.6.md",
+      "sha256": "77f2808510fd7c2f85f1afeadf50947f8462ea621e7c517f5d57c654d241e7ee",
+      "size_bytes": 83298
+    },
+    {
+      "filename": "DELTA_ZERO_ENGINE_v1_3.txt",
+      "sha256": "3ebdc3d4a62a4444ba401f07cc562d0a5bba90ebbdf6002cdb5097a64bdae500",
+      "size_bytes": 35724
+    },
+    {
+      "filename": "CALIUSO_RIME.txt",
+      "sha256": "d6ef242ede54e0d93afa097094f58f6aed91feeaf5a808ee113131e1ea5d2402",
+      "size_bytes": 48579
+    },
+    {
+      "filename": "CALIUSO_714_STACK__ABSOLUTE_SURVIVAL_MONOLITH_vOMEGA+FIXED.txt",
+      "sha256": "c508c882e80530f44edf222680f3fc9b46d2f1d29415f92254848264bf8199ad",
+      "size_bytes": 298777
+    },
+    {
+      "filename": "Negentropy Avionics Stack V1.0 (modules 0-7).pdf",
+      "sha256": "18b2eb78676830ad17933d89fdf452034a3fa2f7b5f4caf105859b0d4a89d1df",
+      "size_bytes": 632720
+    },
+    {
+      "filename": "QED_CLARITY_ENGINE_v2_CANONICAL.md",
+      "sha256": "d77049675649063c446be07db52e68c4049eadcd06ee2f140322e389c28bb5ac",
+      "size_bytes": 18709
+    },
+    {
+      "filename": "ULTIMA.CLARITY.ENGINE.md",
+      "sha256": "5bc576943e60cf6c34e7ab331776256d4ba5990d2cc4794b6b47d3be8095d4e9",
+      "size_bytes": 58792
+    },
+    {
+      "filename": "CALIUSO_PUBLIC_CLARITY_ENGINE_vO4_COMPLETE.md",
+      "sha256": "9ff0cbfc6bd6ca4e459addfc5c14a181839c1d6a7e87d4e5f55f5b073e236604",
+      "size_bytes": 50453
+    },
+    {
+      "filename": "Ultima_v8_cannon.txt",
+      "sha256": "58a15fdc424097f2b985578265771e3f215afa05bb7507a221d86becf605368e",
+      "size_bytes": 33588
+    },
+    {
+      "filename": "V7_CALIUSO_vOmega_ULTIMA_7.txt",
+      "sha256": "0d3c154791ad891c8e9f68c1699a317cc6cbfd2b2ba04d56fcc7539640b84a64",
+      "size_bytes": 43532
+    },
+    {
+      "filename": "claudini-main.zip",
+      "sha256": "ef4f5bbb696ada68fbba1d042e30e563055f6575233325309ea24c7aaefa42f7",
+      "size_bytes": 1434391
+    }
+  ]
+}

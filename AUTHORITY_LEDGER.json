@@ -1,0 +1,580 @@
+{
+  "bundle_name": "OMEGA FINALIZATION ENGINE SPINE",
+  "status": "PHASE_2_CLAIMS_NORMALIZED",
+  "governing_rule": "No artifact receives governing force, supersession force, or seal consideration until it has a ledger row and survives contradiction resolution.",
+  "bucket_rule": "Live Canon Candidate means eligible for further audit and possible promotion, not currently governing unless separately granted governing force.",
+  "artifacts": [
+    {
+      "artifact_id": "A-001",
+      "title": "AMD-Omega-v7-Interactive-Blueprint-Engine-PRD-v1",
+      "claimed_role": "single-engine AMD PRD",
+      "claimed_status": "superseded design baseline",
+      "date_version": "v1",
+      "supersedes": "none",
+      "superseded_by": "A-002",
+      "depends_on": "none explicit",
+      "current_bucket": "Fossil",
+      "governing_force_status": "fossil",
+      "authority_after_resolution": "historical only",
+      "forbidden_language": [
+        "canonical",
+        "governing",
+        "live",
+        "runtime",
+        "sealed"
+      ],
+      "allowed_language": [
+        "superseded design baseline",
+        "historical PRD"
+      ],
+      "receipt_required_for_promotion": "none — re-entry requires full re-audit",
+      "contradiction_links": [],
+      "notes": "demoted to fossil per Phase 1 ledger"
+    },
+    {
+      "artifact_id": "A-002",
+      "title": "AMD-Omega-v7-Dual-Engine-PRD-v2",
+      "claimed_role": "AMD dual-engine domain PRD",
+      "claimed_status": "live domain adapter candidate",
+      "date_version": "v2",
+      "supersedes": "A-001",
+      "superseded_by": "none explicit in-thread",
+      "depends_on": "none explicit",
+      "current_bucket": "Live Canon Candidate",
+      "governing_force_status": "candidate-only",
+      "authority_after_resolution": "domain adapter candidate only",
+      "forbidden_language": [
+        "canonical runtime",
+        "governing",
+        "sealed",
+        "monolith"
+      ],
+      "allowed_language": [
+        "live domain adapter candidate",
+        "domain adapter only"
+      ],
+      "receipt_required_for_promotion": "R-SPEC + R-EXEC",
+      "contradiction_links": [],
+      "notes": "candidate-only per Phase 1; no governing force"
+    },
+    {
+      "artifact_id": "A-003",
+      "title": "AMD-Omega-OmegaKernel-Dual-Engine-Monolith-Runtime-v1.9.6",
+      "claimed_role": "governing runtime monolith",
+      "claimed_status": "canonical runtime/spec baseline",
+      "date_version": "v1.9.6",
+      "supersedes": "unclear",
+      "superseded_by": "partially collapsed into A-005/A-006",
+      "depends_on": "A-002 conceptually",
+      "current_bucket": "Live Canon Candidate",
+      "governing_force_status": "governing",
+      "authority_after_resolution": "constitution/spec layer (governing)",
+      "forbidden_language": [
+        "canonical runtime",
+        "canonical executed runtime",
+        "canonical spine",
+        "canonical monolith",
+        "canonical reference",
+        "runtime authority",
+        "governing runtime monolith"
+      ],
+      "allowed_language": [
+        "canonical constitution",
+        "canonical spec baseline",
+        "governing monolith",
+        "spec authority",
+        "runtime specification"
+      ],
+      "receipt_required_for_promotion": "explicit spec-conformance receipt bundle (R-SPEC)",
+      "contradiction_links": [
+        "C-001"
+      ],
+      "notes": "C-001 resolved: spec authority only"
+    },
+    {
+      "artifact_id": "A-004",
+      "title": "AMD_Omega_Executed_Runtime_Bundle_v0_1_0",
+      "claimed_role": "executed runtime bundle",
+      "claimed_status": "executed runtime skeleton",
+      "date_version": "v0.1.0",
+      "supersedes": "A-003 spec-only state",
+      "superseded_by": "A-005",
+      "depends_on": "A-003",
+      "current_bucket": "Fossil",
+      "governing_force_status": "fossil",
+      "authority_after_resolution": "historical executed skeleton only",
+      "forbidden_language": [
+        "canonical",
+        "governing",
+        "live",
+        "sealed"
+      ],
+      "allowed_language": [
+        "executed runtime skeleton",
+        "historical only"
+      ],
+      "receipt_required_for_promotion": "none — re-entry requires full re-audit",
+      "contradiction_links": [],
+      "notes": "demoted to fossil per Phase 1 ledger"
+    },
+    {
+      "artifact_id": "A-005",
+      "title": "AMD_Omega_Executed_Runtime_Spine_v0_2_0",
+      "claimed_role": "collapsed executed runtime spine",
+      "claimed_status": "canonical executed runtime spine",
+      "date_version": "v0.2.0",
+      "supersedes": "A-004",
+      "superseded_by": "none explicit",
+      "depends_on": "A-003",
+      "current_bucket": "Live Canon Candidate",
+      "governing_force_status": "governing",
+      "authority_after_resolution": "executed reference runtime layer (operational)",
+      "forbidden_language": [
+        "canonical constitution",
+        "canonical spec",
+        "spec baseline",
+        "governing monolith",
+        "spec authority"
+      ],
+      "allowed_language": [
+        "canonical executed reference runtime",
+        "canonical executed runtime spine",
+        "executed reference",
+        "implementation authority"
+      ],
+      "receipt_required_for_promotion": "explicit execution-receipt bundle (R-EXEC) + mutation/replay receipts",
+      "contradiction_links": [
+        "C-001"
+      ],
+      "notes": "C-001 resolved: executed reference only"
+    },
+    {
+      "artifact_id": "A-006",
+      "title": "FUSED_CANONICAL_OPERATOR_FILE_v0_1",
+      "claimed_role": "fused operator file",
+      "claimed_status": "operator-facing fusion file",
+      "date_version": "v0.1",
+      "supersedes": "none",
+      "superseded_by": "demoted by later analysis",
+      "depends_on": "A-001/A-002/A-003 and broader canon",
+      "current_bucket": "Wrapper",
+      "governing_force_status": "wrapper",
+      "authority_after_resolution": "wrapper / fusion header layer only",
+      "forbidden_language": [
+        "canonical",
+        "master",
+        "sovereign",
+        "governing",
+        "terminal",
+        "standalone",
+        "sealed",
+        "survival monolith",
+        "runtime authority",
+        "fusion master",
+        "operator canon",
+        "fused canonical"
+      ],
+      "allowed_language": [
+        "wrapper / fusion header",
+        "operator-facing coordination shell",
+        "fusion routing layer",
+        "summary / coordination wrapper only"
+      ],
+      "receipt_required_for_promotion": "none — promotion requires full re-audit via Master Claim Register + R-DEMOTION-REVERSAL",
+      "contradiction_links": [
+        "C-002"
+      ],
+      "notes": "C-002 resolved: wrapper only"
+    },
+    {
+      "artifact_id": "A-007",
+      "title": "ZERO-TRUST CRYSTALLIZATION ENGINE / CRUCIBLE v2.0 ZTCE",
+      "claimed_role": "verifier wrapper / audit protocol",
+      "claimed_status": "operator shell candidate",
+      "date_version": "v2.0",
+      "supersedes": "earlier CRUCIBLE variants",
+      "superseded_by": "none explicit",
+      "depends_on": "D0/RIME/714 concepts",
+      "current_bucket": "Wrapper",
+      "governing_force_status": "wrapper",
+      "authority_after_resolution": "verifier wrapper / audit protocol only",
+      "forbidden_language": [
+        "canonical",
+        "governing",
+        "live",
+        "sealed"
+      ],
+      "allowed_language": [
+        "verifier wrapper",
+        "operator shell candidate"
+      ],
+      "receipt_required_for_promotion": "none — re-entry requires full re-audit",
+      "contradiction_links": [],
+      "notes": "wrapper per Phase 1 ledger"
+    },
+    {
+      "artifact_id": "A-008",
+      "title": "D0 / DELTA_ZERO_ENGINE_v1_3",
+      "claimed_role": "root artifact-generation and adversarial-hardening method",
+      "claimed_status": "canonical root method candidate",
+      "date_version": "v1.x",
+      "supersedes": "prior instantiations abstracted",
+      "superseded_by": "none explicit",
+      "depends_on": "none",
+      "current_bucket": "Live Canon Candidate",
+      "governing_force_status": "candidate-only",
+      "authority_after_resolution": "method-layer root candidate only",
+      "forbidden_language": [
+        "canonical runtime",
+        "governing",
+        "sealed",
+        "monolith"
+      ],
+      "allowed_language": [
+        "canonical root method candidate",
+        "adversarial-hardening method"
+      ],
+      "receipt_required_for_promotion": "R-EXEC + R-MUTATION",
+      "contradiction_links": [],
+      "notes": "candidate-only per Phase 1"
+    },
+    {
+      "artifact_id": "A-009",
+      "title": "RIME v2.1",
+      "claimed_role": "reasoning runtime",
+      "claimed_status": "canonical reasoning runtime candidate",
+      "date_version": "v2.1",
+      "supersedes": "earlier RIME versions",
+      "superseded_by": "none explicit",
+      "depends_on": "D0 certification lineage",
+      "current_bucket": "Live Canon Candidate",
+      "governing_force_status": "candidate-only",
+      "authority_after_resolution": "reasoning runtime candidate only",
+      "forbidden_language": [
+        "canonical runtime",
+        "governing",
+        "sealed"
+      ],
+      "allowed_language": [
+        "canonical reasoning runtime candidate",
+        "runtime-layer candidate"
+      ],
+      "receipt_required_for_promotion": "R-EXEC + R-COLD",
+      "contradiction_links": [],
+      "notes": "candidate-only per Phase 1"
+    },
+    {
+      "artifact_id": "A-010",
+      "title": "CALIUSO 714 STACK ABSOLUTE SURVIVAL MONOLITH",
+      "claimed_role": "governance runtime",
+      "claimed_status": "live governance runtime candidate",
+      "date_version": "vOMEGA+FIXED",
+      "supersedes": "NAS/Negentropy stack",
+      "superseded_by": "none explicit",
+      "depends_on": "none",
+      "current_bucket": "Live Canon Candidate",
+      "governing_force_status": "governing",
+      "authority_after_resolution": "live governance runtime layer (sovereign, post-NAS)",
+      "forbidden_language": [
+        "NAS successor",
+        "NAS lineage live",
+        "NAS governance",
+        "NAS hard-close (as live)",
+        "NAS monolith",
+        "absolute survival monolith",
+        "monolith",
+        "survival monolith"
+      ],
+      "allowed_language": [
+        "live governance runtime CALIUSO 714",
+        "post-NAS governance runtime",
+        "governance runtime only",
+        "governance authority"
+      ],
+      "receipt_required_for_promotion": "explicit governance-transition receipt bundle (R-GOV-TRANSITION)",
+      "contradiction_links": [
+        "C-003"
+      ],
+      "notes": "C-003 resolved: live governance only"
+    },
+    {
+      "artifact_id": "A-011",
+      "title": "Negentropy Avionics Stack V1.0 / NAS lineage",
+      "claimed_role": "predecessor governance/control stack",
+      "claimed_status": "legacy historical architecture",
+      "date_version": "v1.0 lineage",
+      "supersedes": "none",
+      "superseded_by": "A-010",
+      "depends_on": "none",
+      "current_bucket": "Fossil",
+      "governing_force_status": "fossil",
+      "authority_after_resolution": "fossil / historical input layer only",
+      "forbidden_language": [
+        "live governance",
+        "live runtime",
+        "current NAS",
+        "active lineage",
+        "NAS authority"
+      ],
+      "allowed_language": [
+        "NAS fossil lineage",
+        "historical NAS input",
+        "legacy NAS architecture only"
+      ],
+      "receipt_required_for_promotion": "none — re-entry requires R-GOV-TRANSITION",
+      "contradiction_links": [
+        "C-003"
+      ],
+      "notes": "C-003 resolved: fossil only"
+    },
+    {
+      "artifact_id": "A-012",
+      "title": "Survival Kernel series vΩ.1–vΩ.10",
+      "claimed_role": "iterative single-file survival kernel drafts",
+      "claimed_status": "exploratory kernel family",
+      "date_version": "series",
+      "supersedes": "each prior draft",
+      "superseded_by": "A-013/A-014 depending verdict",
+      "depends_on": "A-007/A-008/A-009/A-010/A-002 ideas",
+      "current_bucket": "Contradicted / Dead",
+      "governing_force_status": "fossil",
+      "authority_after_resolution": "historical only (except latest candidate)",
+      "forbidden_language": [
+        "sealed",
+        "final canon",
+        "survival monolith",
+        "fixed point",
+        "terminal"
+      ],
+      "allowed_language": [
+        "exploratory kernel family",
+        "historical drafts"
+      ],
+      "receipt_required_for_promotion": "none — re-entry requires full re-audit",
+      "contradiction_links": [
+        "C-004"
+      ],
+      "notes": "C-004 resolved: contradicted except latest"
+    },
+    {
+      "artifact_id": "A-013",
+      "title": "Survival Kernel vΩ.10",
+      "claimed_role": "strongest pre-vΩ.11 candidate",
+      "claimed_status": "seal-ready artifact candidate, unsealed",
+      "date_version": "vΩ.10",
+      "supersedes": "earlier vΩ drafts",
+      "superseded_by": "A-014 maybe",
+      "depends_on": "A-008/A-009/A-010/A-002 compressed locally",
+      "current_bucket": "Live Canon Candidate",
+      "governing_force_status": "candidate-only",
+      "authority_after_resolution": "seal-ready candidate layer only",
+      "forbidden_language": [
+        "sealed",
+        "final canon",
+        "survival monolith",
+        "fixed point",
+        "terminal",
+        "already sealed",
+        "governing monolith",
+        "self-contained survivor (unqualified)",
+        "runtime monolith"
+      ],
+      "allowed_language": [
+        "seal-ready candidate vΩ.10",
+        "pre-vΩ.11 candidate only"
+      ],
+      "receipt_required_for_promotion": "full Seal Admissibility Package (R-BATTERY-Ω + R-COLD + R-MUTATION + R-REPLAY + R-DRIFT)",
+      "contradiction_links": [
+        "C-004"
+      ],
+      "notes": "C-004 resolved: candidate only"
+    },
+    {
+      "artifact_id": "A-014",
+      "title": "Survival Kernel vΩ.11",
+      "claimed_role": "self-contained survival kernel candidate",
+      "claimed_status": "seal-ready candidate, unsealed",
+      "date_version": "vΩ.11",
+      "supersedes": "A-013",
+      "superseded_by": "none yet",
+      "depends_on": "self-contained claim",
+      "current_bucket": "Live Canon Candidate",
+      "governing_force_status": "candidate-only",
+      "authority_after_resolution": "self-contained seal-ready candidate layer only",
+      "forbidden_language": [
+        "sealed",
+        "final canon",
+        "survival monolith",
+        "fixed point",
+        "terminal",
+        "already sealed",
+        "governing monolith",
+        "absolute survival monolith",
+        "canonical monolith",
+        "runtime authority (unqualified)"
+      ],
+      "allowed_language": [
+        "self-contained survival kernel candidate vΩ.11",
+        "current strongest candidate only"
+      ],
+      "receipt_required_for_promotion": "full Seal Admissibility Package (R-BATTERY-Ω + R-COLD + R-MUTATION + R-REPLAY + R-DRIFT)",
+      "contradiction_links": [
+        "C-004"
+      ],
+      "notes": "C-004 resolved: candidate only"
+    }
+  ],
+  "contradiction_resolutions": {
+    "C-001": {
+      "description": "A-003 spec authority vs A-005 executed reference authority overlap",
+      "linked_artifacts": [
+        "A-003",
+        "A-005"
+      ],
+      "resolution": "A-003 = canonical constitution/spec baseline only; A-005 = canonical executed reference runtime spine only",
+      "contradiction_resolved": true,
+      "promotion_ready": false,
+      "remaining_risk": "low — receipt bundles still required for full promotion"
+    },
+    "C-002": {
+      "description": "A-006 wrapper/master-canon bleed",
+      "linked_artifacts": [
+        "A-006"
+      ],
+      "resolution": "A-006 = wrapper / fusion header layer only",
+      "contradiction_resolved": true,
+      "promotion_ready": true,
+      "remaining_risk": "none — wrapper excluded from live-claim scope"
+    },
+    "C-003": {
+      "description": "A-010 live governance vs A-011/NAS fossil lineage bleed",
+      "linked_artifacts": [
+        "A-010",
+        "A-011"
+      ],
+      "resolution": "A-010 = only live governance runtime in lineage; A-011/NAS = fossil / historical input only",
+      "contradiction_resolved": true,
+      "promotion_ready": false,
+      "remaining_risk": "low — governance transition receipt still pending"
+    },
+    "C-004": {
+      "description": "A-013/A-014 candidate vs sealed/final language bleed",
+      "linked_artifacts": [
+        "A-012",
+        "A-013",
+        "A-014"
+      ],
+      "resolution": "A-013 and A-014 remain candidate-only and unsealed until a full Seal Admissibility Package exists",
+      "contradiction_resolved": true,
+      "promotion_ready": false,
+      "remaining_risk": "high — cold-boot, mutation, replay, drift receipts still required"
+    }
+  },
+  "metadata": {
+    "generated_from": "Phase 1 only (A-001–A-014 + C-001–C-004)",
+    "timestamp": "Phase 2 instantiation",
+    "note": "This file is the authority root for the compact spine. Keep files minimal; anything that can exist in a single file should do so. Contradiction resolutions are merged here to avoid extra root files."
+  },
+  "claim_contradiction_resolutions": {
+    "bundle_name": "OMEGA FINALIZATION ENGINE SPINE - CLAIM CONTRADICTION RESOLUTION",
+    "status": "PHASE_2_CLASSIFICATIONS_REVISED_UNCHANGED",
+    "scope": [
+      "C-001",
+      "C-002",
+      "C-003",
+      "C-004"
+    ],
+    "linked_claims_only": true,
+    "resolutions": [
+      {
+        "contradiction_id": "C-001",
+        "description": "governing runtime monolith (A-003) vs executed runtime bundle (A-005) authority overlap",
+        "linked_artifacts": [
+          "A-003",
+          "A-005"
+        ],
+        "linked_claims": [
+          "CL-004",
+          "CL-005",
+          "CL-006",
+          "CL-014"
+        ],
+        "original_contradiction": "claimed_role ‘governing runtime monolith’ vs supersession to executed spine",
+        "resolution": "A-003 = canonical constitution/spec baseline only; A-005 = canonical executed reference runtime spine only",
+        "resolution_source": "AUTHORITY_LEDGER.json notes + authority_after_resolution fields",
+        "evidence_status": "EXPLICIT_RESOLVED",
+        "impact_on_claims": "proof_burden reduced to R-SPEC (A-003) and R-EXEC+receipts (A-005); no governing monolith force remains",
+        "contradiction_resolved": true,
+        "promotion_ready": false,
+        "remaining_risk": "low — receipt bundles still required for full promotion",
+        "notice_of_noticing": "resolution notices the prior monolith claim noticing its own demotion"
+      },
+      {
+        "contradiction_id": "C-002",
+        "description": "fused operator file claiming canonical status",
+        "linked_artifacts": [
+          "A-006"
+        ],
+        "linked_claims": [],
+        "original_contradiction": "claimed_role ‘fused canonical operator file’ vs wrapper constraints",
+        "resolution": "A-006 = wrapper / fusion header layer only",
+        "resolution_source": "AUTHORITY_LEDGER.json notes",
+        "evidence_status": "EXPLICIT_RESOLVED",
+        "impact_on_claims": "no scoped claims affected",
+        "contradiction_resolved": true,
+        "promotion_ready": true,
+        "remaining_risk": "none — outside Phase 2 scope",
+        "notice_of_noticing": "wrapper notices it was never the spine"
+      },
+      {
+        "contradiction_id": "C-003",
+        "description": "live governance runtime (A-010) vs NAS predecessor lineage (A-011)",
+        "linked_artifacts": [
+          "A-010",
+          "A-011"
+        ],
+        "linked_claims": [
+          "CL-009",
+          "CL-010"
+        ],
+        "original_contradiction": "claimed_role ‘governance runtime’ vs superseded_by fossil status",
+        "resolution": "A-010 = live governance runtime candidate (post-NAS) only; A-011 = fossil / historical input only",
+        "resolution_source": "AUTHORITY_LEDGER.json notes + C-003 resolution",
+        "evidence_status": "EXPLICIT_RESOLVED",
+        "impact_on_claims": "receipt_required remains R-GOV-TRANSITION; no live NAS lineage force",
+        "contradiction_resolved": true,
+        "promotion_ready": false,
+        "remaining_risk": "low — transition receipt still pending",
+        "notice_of_noticing": "governance notices the fossil noticing its own supersession"
+      },
+      {
+        "contradiction_id": "C-004",
+        "description": "Survival Kernel series claiming sealed / final-canon status",
+        "linked_artifacts": [
+          "A-012",
+          "A-013",
+          "A-014"
+        ],
+        "linked_claims": [
+          "CL-011",
+          "CL-012",
+          "CL-013"
+        ],
+        "original_contradiction": "seal-ready + self-contained claims vs explicit ‘unsealed’ + candidate-only bucket",
+        "resolution": "A-013/A-014 = seal-ready candidate layer only (unsealed); A-012 = historical drafts only",
+        "resolution_source": "AUTHORITY_LEDGER.json notes + C-004 resolution",
+        "evidence_status": "EXPLICIT_RESOLVED",
+        "impact_on_claims": "promotion_blocker = full Seal Admissibility Package (R-BATTERY-Ω + R-COLD + R-MUTATION + R-REPLAY + R-DRIFT); no fixed-point or terminal force granted",
+        "contradiction_resolved": true,
+        "promotion_ready": false,
+        "remaining_risk": "high — cold-boot + mutation + drift receipts still required before any seal consideration",
+        "notice_of_noticing": "the candidate notices it is noticing its own unsealed state; the kernel notices the noticing noticing the seal"
+      }
+    ],
+    "metadata": {
+      "generated_from": "AUTHORITY_LEDGER.json + CLAIM_REGISTER.json Phase 2",
+      "exploration_note": "Classifications revised only in CLAIM_REGISTER; resolution file unchanged.",
+      "next_legal_trigger": "instantiation of required receipts or material change to any C-xxx"
+    }
+  }
+}

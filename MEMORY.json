@@ -1,0 +1,120 @@
+{
+  "memory_name": "OMEGA_MINIMAL_MEMORY_VAULT",
+  "status": "ACTIVE",
+  "purpose": "Smallest canonical memory ledger that preserves load-bearing state across audits and future sealed builds without recreating context from chat history.",
+  "universality_rule": "This file may be copied into future audited builds. It must store only durable, load-bearing audit memory. Anything reconstructable from other root files should be omitted unless repeated reconstruction would create drift risk.",
+  "anti_bloat_rule": {
+    "binding": true,
+    "scope": "this build and every future build the engine seals or audits",
+    "rules": [
+      "Every build must prevent bloating.",
+      "Every update must prevent bloating.",
+      "Every zip should contain no more than 10 root files maximum if possible.",
+      "Always update and merge what can be merged into a single file without breaking load-bearing structure.",
+      "Do not add a new root file unless it carries unique governing force that cannot be safely merged into an existing root file.",
+      "Prefer strengthening an existing root file over spawning a sibling file.",
+      "Any proposed expansion must justify why merge is impossible or unsafe."
+    ],
+    "purpose": "regression prevention and archive discipline"
+  },
+  "current_build": "OMEGA_FINALIZATION_ENGINE_SPINE_v17",
+  "load_bearing_facts": {
+    "phase_1_complete": true,
+    "authority_root": "AUTHORITY_LEDGER.json",
+    "claim_root": "CLAIM_REGISTER.json",
+    "seal_root": "SEAL.json",
+    "lineage_root": "LINEAGE.json",
+    "source_root": "SOURCE_INDEX.json",
+    "log_root": "LOGBOOK.jsonl",
+    "execution_ledger_root": "EXECUTION_LEDGER.jsonl",
+    "receipts_root": "RECEIPTS.json",
+    "seal_decision_evaluated": true,
+    "seal_decision": "NOT_SEALED",
+    "all_six_required_receipts_present": true,
+    "receipt_history_mode": "versioned_append_only_from_v17",
+    "receipts_current_state_container": "RECEIPTS.json.receipts",
+    "receipts_history_container": "RECEIPTS.json.receipt_history"
+  },
+  "governing_rules": [
+    "No artifact receives governing force, supersession force, or seal consideration until it has a ledger row and survives contradiction resolution.",
+    "Live Canon Candidate means eligible for further audit and possible promotion, not currently governing unless separately granted governing force.",
+    "Keep files as minimal as possible to prevent bloating. Anything that can exist in a single file should do so.",
+    "No seal until the seal event itself is auditable.",
+    "Do not rebuild the archive unless a new load-bearing root is instantiated or a load-bearing root materially changes."
+  ],
+  "authority_snapshot": {
+    "governing_now": {
+      "A-003": "canonical constitution/spec only",
+      "A-005": "canonical executed reference runtime only",
+      "A-010": "live governance runtime only"
+    },
+    "candidate_only": {
+      "A-002": "domain adapter candidate only",
+      "A-008": "method-layer root candidate only",
+      "A-009": "reasoning runtime candidate only",
+      "A-013": "seal-ready candidate only",
+      "A-014": "self-contained seal-ready candidate only"
+    },
+    "wrappers": {
+      "A-006": "wrapper / fusion header only",
+      "A-007": "verifier wrapper only"
+    },
+    "fossils": {
+      "A-001": "historical only",
+      "A-004": "historical executed skeleton only",
+      "A-011": "NAS fossil / historical input only",
+      "A-012": "historical drafts only"
+    }
+  },
+  "contradictions_resolved": [
+    "C-001",
+    "C-002",
+    "C-003",
+    "C-004"
+  ],
+  "seal_state": {
+    "sealed": false,
+    "first_real_receipt_appended": true,
+    "latest_receipt_id": "R-SELFTEST-001",
+    "latest_receipt_status": "PATCHABLE",
+    "seal_decision_admissible": false
+  },
+  "next_legal_triggers": [
+    "populate next receipt object (R-BATTERY, R-MUTATION, R-REPLAY, or R-DRIFT)",
+    "materially change SEAL.json",
+    "materially change authority or claim graph"
+  ],
+  "rebuild_policy": {
+    "default": "freeze",
+    "rebuild_only_if": [
+      "new load-bearing root exists",
+      "existing load-bearing root materially changed",
+      "seal-state machinery materially changed"
+    ]
+  },
+  "future_build_portability": {
+    "copy_allowed": true,
+    "must_update_fields": [
+      "current_build",
+      "authority_snapshot",
+      "contradictions_resolved",
+      "seal_state",
+      "next_legal_triggers"
+    ],
+    "must_not_store": [
+      "chat-only rhetoric",
+      "temporary summaries",
+      "non-load-bearing prose",
+      "duplicate file contents available elsewhere in root"
+    ]
+  },
+  "recent_updates": [
+    {
+      "version": "v14",
+      "change": "R-REPLAY-001 upgraded with hash-backed input/spec comparison via EVT-009",
+      "archive_state": "still_not_sealed"
+    }
+  ],
+  "freeze_state": "FROZEN",
+  "last_change": "Resolved receipt-history governance wrinkle by separating append-only history from current canonical receipt state in RECEIPTS.json"
+}

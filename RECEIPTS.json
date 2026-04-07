@@ -1,0 +1,626 @@
+{
+  "bundle_name": "OMEGA FINALIZATION ENGINE SPINE - RECEIPTS",
+  "status": "SEAL_DECISION_EVALUATED_NOT_SEALED",
+  "receipt_schema_version": "vΩ.ULTIMA",
+  "required_receipt_types": [
+    "R-SELFTEST",
+    "R-BATTERY",
+    "R-MUTATION",
+    "R-REPLAY",
+    "R-DRIFT",
+    "R-SEAL-DECISION"
+  ],
+  "receipts": [
+    {
+      "receipt_id": "R-SELFTEST-001",
+      "candidate_id": "A-014",
+      "receipt_type": "R-SELFTEST",
+      "phase": "T9",
+      "source_event_id": "EVT-010",
+      "linked_claim_ids": [
+        "CL-013"
+      ],
+      "status": "PATCHABLE",
+      "verified_items": {
+        "invariants": [
+          "I1",
+          "I2",
+          "I3",
+          "I4",
+          "I5",
+          "I6",
+          "I7"
+        ],
+        "tests": null,
+        "drift_detected": null,
+        "expected_failure_detected": null,
+        "candidate_unchanged": null,
+        "mutated_copy_used": null,
+        "input_fixed": null,
+        "same_structure_except_timestamp": null,
+        "seal_if_evaluated": null,
+        "decision": null
+      },
+      "failures_blocking": [],
+      "evidence_refs": {
+        "candidate_hash": "7475aa01b96a514c4f9d91d6c25156cafdddf1078bd8e7756be6d279176eae22",
+        "replay_status": null,
+        "mutation_trace": null
+      },
+      "issued_at": "2026-04-06T21:02:00Z",
+      "notes": "I2: self-containment verified against CL-013 (no unresolved external dependencies at evaluated level). I4: defect detectability cross-linked to R-MUTATION-001 mutated-copy failure predicate. Mapping corrected under CANON.md v15. Status honest PATCHABLE.",
+      "receipt_version": 1,
+      "receipt_revision_id": "R-SELFTEST-001::v17-baseline",
+      "supersedes_revision_id": null,
+      "receipt_state": "current"
+    },
+    {
+      "receipt_id": "R-BATTERY-001",
+      "candidate_id": "A-014",
+      "receipt_type": "R-BATTERY",
+      "phase": "F",
+      "source_event_id": "EVT-004",
+      "linked_claim_ids": [
+        "CL-012",
+        "CL-013"
+      ],
+      "status": "PATCHABLE",
+      "verified_items": {
+        "invariants": [
+          "I1",
+          "I2",
+          "I3",
+          "I4",
+          "I5",
+          "I6",
+          "I7"
+        ],
+        "tests": {
+          "T1": "PATCHABLE",
+          "T2": "PATCHABLE",
+          "T3": "PATCHABLE",
+          "T4": "PATCHABLE",
+          "T5": "PATCHABLE",
+          "T6": "PATCHABLE",
+          "T7": "PATCHABLE",
+          "T8": "PATCHABLE",
+          "T9": "PATCHABLE",
+          "T10": "PATCHABLE",
+          "T11": "PATCHABLE",
+          "T12": "PATCHABLE"
+        },
+        "drift_detected": null,
+        "expected_failure_detected": null,
+        "candidate_unchanged": null,
+        "mutated_copy_used": null,
+        "input_fixed": null,
+        "same_structure_except_timestamp": null,
+        "seal_if_evaluated": null,
+        "decision": null
+      },
+      "failures_blocking": [],
+      "evidence_refs": {
+        "candidate_hash": "7475aa01b96a514c4f9d91d6c25156cafdddf1078bd8e7756be6d279176eae22",
+        "replay_status": null,
+        "mutation_trace": null
+      },
+      "issued_at": "2026-04-07T00:04:30Z",
+      "notes": "Receipt reissued with source_event_id link",
+      "receipt_version": 1,
+      "receipt_revision_id": "R-BATTERY-001::v17-baseline",
+      "supersedes_revision_id": null,
+      "receipt_state": "current"
+    },
+    {
+      "receipt_id": "R-MUTATION-001",
+      "candidate_id": "A-014",
+      "receipt_type": "R-MUTATION",
+      "phase": "T7",
+      "source_event_id": "EVT-005",
+      "linked_claim_ids": [
+        "CL-015",
+        "CL-013"
+      ],
+      "status": "PATCHABLE",
+      "verified_items": {
+        "invariants": [
+          "I4"
+        ],
+        "tests": null,
+        "drift_detected": null,
+        "expected_failure_detected": true,
+        "candidate_unchanged": true,
+        "mutated_copy_used": true,
+        "input_fixed": null,
+        "same_structure_except_timestamp": null,
+        "seal_if_evaluated": null,
+        "decision": null
+      },
+      "failures_blocking": [],
+      "evidence_refs": {
+        "candidate_hash": "7475aa01b96a514c4f9d91d6c25156cafdddf1078bd8e7756be6d279176eae22",
+        "replay_status": null,
+        "mutation_trace": null
+      },
+      "issued_at": "2026-04-07T00:04:31Z",
+      "notes": "Receipt reissued with source_event_id link",
+      "receipt_version": 1,
+      "receipt_revision_id": "R-MUTATION-001::v17-baseline",
+      "supersedes_revision_id": null,
+      "receipt_state": "current"
+    },
+    {
+      "receipt_id": "R-REPLAY-001",
+      "candidate_id": "A-014",
+      "receipt_type": "R-REPLAY",
+      "phase": "T6",
+      "source_event_id": "EVT-009",
+      "linked_claim_ids": [
+        "CL-013",
+        "CL-014"
+      ],
+      "status": "PATCHABLE",
+      "verified_items": {
+        "invariants": [
+          "I4",
+          "I7"
+        ],
+        "tests": null,
+        "drift_detected": null,
+        "expected_failure_detected": null,
+        "candidate_unchanged": true,
+        "mutated_copy_used": null,
+        "input_fixed": {
+          "input_id": "INPUT-REPLAY-001",
+          "payload_sha256": "fe72bab6cd4cfdae0698ac4c4cc7a0d40f5c07fc5419cc97ef6fd91da64d5d92"
+        },
+        "same_structure_except_timestamp": true,
+        "seal_if_evaluated": null,
+        "decision": null
+      },
+      "failures_blocking": [],
+      "evidence_refs": {
+        "candidate_hash": "7475aa01b96a514c4f9d91d6c25156cafdddf1078bd8e7756be6d279176eae22",
+        "replay_status": "VALID",
+        "mutation_trace": null,
+        "structure_hash": "ea24f7e187370a1f03aa61a45014c90ac52554f42ddf22a89827b6b4a6dc1d1b",
+        "prior_event_basis": "EVT-006",
+        "structural_comparison_hash_match": true
+      },
+      "issued_at": "2026-04-07T03:27:42Z",
+      "notes": "Reissued from EVT-009. input_fixed is a real input reference with SHA-256. same_structure_except_timestamp backed by hash equality of nulled structure templates across EVT-006 and EVT-009. candidate_unchanged confirmed by hash identity. Status remains PATCHABLE: artifact-surface replay only; cold-boot runtime execution not performed; fresh_context ceiling not cleared.",
+      "receipt_version": 1,
+      "receipt_revision_id": "R-REPLAY-001::v17-baseline",
+      "supersedes_revision_id": null,
+      "receipt_state": "current"
+    },
+    {
+      "receipt_id": "R-DRIFT-001",
+      "candidate_id": "A-014",
+      "receipt_type": "R-DRIFT",
+      "phase": "T8",
+      "source_event_id": "EVT-007",
+      "linked_claim_ids": [
+        "CL-013"
+      ],
+      "status": "PATCHABLE",
+      "verified_items": {
+        "invariants": [
+          "I5"
+        ],
+        "tests": null,
+        "drift_detected": false,
+        "expected_failure_detected": null,
+        "candidate_unchanged": null,
+        "mutated_copy_used": null,
+        "input_fixed": null,
+        "same_structure_except_timestamp": null,
+        "seal_if_evaluated": null,
+        "decision": null
+      },
+      "failures_blocking": [],
+      "evidence_refs": {
+        "candidate_hash": "7475aa01b96a514c4f9d91d6c25156cafdddf1078bd8e7756be6d279176eae22",
+        "replay_status": null,
+        "mutation_trace": null
+      },
+      "issued_at": "2026-04-07T00:06:00Z",
+      "notes": "Drift surface-checked; awaiting full population for PASS",
+      "receipt_version": 1,
+      "receipt_revision_id": "R-DRIFT-001::v17-baseline",
+      "supersedes_revision_id": null,
+      "receipt_state": "current"
+    },
+    {
+      "receipt_id": "R-SEAL-DECISION-001",
+      "candidate_id": "A-014",
+      "receipt_type": "R-SEAL-DECISION",
+      "phase": "I",
+      "source_event_id": "EVT-008",
+      "linked_claim_ids": [
+        "CL-012",
+        "CL-013"
+      ],
+      "status": "PATCHABLE",
+      "verified_items": {
+        "invariants": [
+          "I1",
+          "I2",
+          "I3",
+          "I4",
+          "I5",
+          "I6",
+          "I7"
+        ],
+        "tests": null,
+        "drift_detected": null,
+        "expected_failure_detected": null,
+        "candidate_unchanged": null,
+        "mutated_copy_used": null,
+        "input_fixed": null,
+        "same_structure_except_timestamp": null,
+        "seal_if_evaluated": true,
+        "decision": "NOT_SEALED"
+      },
+      "failures_blocking": [],
+      "evidence_refs": {
+        "candidate_hash": "7475aa01b96a514c4f9d91d6c25156cafdddf1078bd8e7756be6d279176eae22",
+        "replay_status": null,
+        "mutation_trace": null
+      },
+      "issued_at": "2026-04-07T00:06:45Z",
+      "notes": "Seal decision surface-evaluated from PATCHABLE receipts only; no seal granted",
+      "receipt_version": 1,
+      "receipt_revision_id": "R-SEAL-DECISION-001::v17-baseline",
+      "supersedes_revision_id": null,
+      "receipt_state": "current"
+    }
+  ],
+  "envelope_template": {
+    "receipt_id": "string (R-xxx-NNN)",
+    "candidate_id": "string",
+    "receipt_type": "one of required_receipt_types",
+    "phase": "string (I|L|T1..T12|F)",
+    "source_event_id": "string (EVT-xxx) or null",
+    "linked_claim_ids": "array of strings (CL-xxx)",
+    "status": "PASS|FAIL|PATCHABLE|BLOCKED",
+    "verified_items": {
+      "invariants": "array of strings (I1..I7)",
+      "tests": "object (T1..T12) or null",
+      "drift_detected": "boolean or null",
+      "expected_failure_detected": "boolean or null",
+      "candidate_unchanged": "boolean or null",
+      "mutated_copy_used": "boolean or null",
+      "input_fixed": "string or null",
+      "same_structure_except_timestamp": "boolean or null",
+      "seal_if_evaluated": "boolean or null",
+      "decision": "NOT_SEALED|SEALED or null"
+    },
+    "failures_blocking": "array of strings",
+    "evidence_refs": {
+      "candidate_hash": "sha256 or null",
+      "replay_status": "VALID|NONDETERMINISTIC|FAIL or null",
+      "mutation_trace": "string or null"
+    },
+    "issued_at": "ISO 8601 string with timezone or null",
+    "notes": "string or null"
+  },
+  "validation_rules": {
+    "envelope_strict": true,
+    "cross_file_must_link": [
+      "source_event_id must exist in EXECUTION_LEDGER.jsonl",
+      "linked_claim_ids must exist in CLAIM_REGISTER.json",
+      "candidate_id must match AUTHORITY_LEDGER current candidate",
+      "receipt_type must match SEAL.json required_receipts"
+    ],
+    "type_predicates": {
+      "status": "if any failures_blocking non-empty then status=FAIL|BLOCKED",
+      "verified_items": "for R-BATTERY: tests object required; for R-MUTATION: expected_failure_detected + candidate_unchanged required",
+      "evidence_refs": "candidate_hash required on every receipt; replay_status required for R-REPLAY|R-DRIFT"
+    },
+    "anti_drift": [
+      "no mutations allowed — only append to receipts array",
+      "issued_at must be strictly after source_event timestamp",
+      "R-SEAL-DECISION may only be appended after all other required_receipt_types are present and PASS"
+    ],
+    "seal_admissibility_gate": "R-SEAL-DECISION.status=PASS only if every required_receipt_type has status=PASS and fresh_context confirmed in MEMORY.json",
+    "receipt_revision_rule": "Every revised receipt must append a new object to receipt_history and update the receipts current-state projection. receipt_history is append-only from v17 onward.",
+    "historical_truth_distinction": "EXECUTION_LEDGER.jsonl and LOGBOOK.jsonl are append-only chronology; receipts is current canonical state; receipt_history is append-only receipt revision provenance."
+  },
+  "metadata": {
+    "population_rule": "append-only — each RUN_ event in EXECUTION_LEDGER.jsonl triggers exactly one receipt append under these rules",
+    "anti_bloat_rule": "single root file; no further merge or expansion is justified right now unless a new unique governing surface appears",
+    "next_legal_trigger": "audit first populated receipt against schema and linkage, then continue with battery/mutation/replay receipts",
+    "alignment": "full sync with SEAL.json, CLAIM_REGISTER.json, AUTHORITY_LEDGER.json, MEMORY.json, EXECUTION_LEDGER.jsonl, and CANON.md"
+  },
+  "container_role": "current_canonical_receipt_state",
+  "history_truth_roots": [
+    "EXECUTION_LEDGER.jsonl",
+    "LOGBOOK.jsonl",
+    "RECEIPTS.json.receipt_history"
+  ],
+  "receipt_revision_policy": {
+    "mode": "versioned_append_only_from_v17",
+    "current_state_container": "receipts",
+    "append_only_history_container": "receipt_history",
+    "required_revision_fields": [
+      "receipt_version",
+      "receipt_revision_id",
+      "supersedes_revision_id",
+      "receipt_state"
+    ],
+    "legacy_boundary": "Historical receipt revisions before v17 may be incomplete because earlier builds used current-state replacement without a dedicated receipt-history ledger."
+  },
+  "receipt_history": [
+    {
+      "receipt_id": "R-SELFTEST-001",
+      "candidate_id": "A-014",
+      "receipt_type": "R-SELFTEST",
+      "phase": "T9",
+      "source_event_id": "EVT-010",
+      "linked_claim_ids": [
+        "CL-013"
+      ],
+      "status": "PATCHABLE",
+      "verified_items": {
+        "invariants": [
+          "I1",
+          "I2",
+          "I3",
+          "I4",
+          "I5",
+          "I6",
+          "I7"
+        ],
+        "tests": null,
+        "drift_detected": null,
+        "expected_failure_detected": null,
+        "candidate_unchanged": null,
+        "mutated_copy_used": null,
+        "input_fixed": null,
+        "same_structure_except_timestamp": null,
+        "seal_if_evaluated": null,
+        "decision": null
+      },
+      "failures_blocking": [],
+      "evidence_refs": {
+        "candidate_hash": "7475aa01b96a514c4f9d91d6c25156cafdddf1078bd8e7756be6d279176eae22",
+        "replay_status": null,
+        "mutation_trace": null
+      },
+      "issued_at": "2026-04-06T21:02:00Z",
+      "notes": "I2: self-containment verified against CL-013 (no unresolved external dependencies at evaluated level). I4: defect detectability cross-linked to R-MUTATION-001 mutated-copy failure predicate. Mapping corrected under CANON.md v15. Status honest PATCHABLE.",
+      "receipt_version": 1,
+      "receipt_revision_id": "R-SELFTEST-001::v17-baseline",
+      "supersedes_revision_id": null,
+      "receipt_state": "current",
+      "history_boundary": "v17_baseline_from_legacy_current_state"
+    },
+    {
+      "receipt_id": "R-BATTERY-001",
+      "candidate_id": "A-014",
+      "receipt_type": "R-BATTERY",
+      "phase": "F",
+      "source_event_id": "EVT-004",
+      "linked_claim_ids": [
+        "CL-012",
+        "CL-013"
+      ],
+      "status": "PATCHABLE",
+      "verified_items": {
+        "invariants": [
+          "I1",
+          "I2",
+          "I3",
+          "I4",
+          "I5",
+          "I6",
+          "I7"
+        ],
+        "tests": {
+          "T1": "PATCHABLE",
+          "T2": "PATCHABLE",
+          "T3": "PATCHABLE",
+          "T4": "PATCHABLE",
+          "T5": "PATCHABLE",
+          "T6": "PATCHABLE",
+          "T7": "PATCHABLE",
+          "T8": "PATCHABLE",
+          "T9": "PATCHABLE",
+          "T10": "PATCHABLE",
+          "T11": "PATCHABLE",
+          "T12": "PATCHABLE"
+        },
+        "drift_detected": null,
+        "expected_failure_detected": null,
+        "candidate_unchanged": null,
+        "mutated_copy_used": null,
+        "input_fixed": null,
+        "same_structure_except_timestamp": null,
+        "seal_if_evaluated": null,
+        "decision": null
+      },
+      "failures_blocking": [],
+      "evidence_refs": {
+        "candidate_hash": "7475aa01b96a514c4f9d91d6c25156cafdddf1078bd8e7756be6d279176eae22",
+        "replay_status": null,
+        "mutation_trace": null
+      },
+      "issued_at": "2026-04-07T00:04:30Z",
+      "notes": "Receipt reissued with source_event_id link",
+      "receipt_version": 1,
+      "receipt_revision_id": "R-BATTERY-001::v17-baseline",
+      "supersedes_revision_id": null,
+      "receipt_state": "current",
+      "history_boundary": "v17_baseline_from_legacy_current_state"
+    },
+    {
+      "receipt_id": "R-MUTATION-001",
+      "candidate_id": "A-014",
+      "receipt_type": "R-MUTATION",
+      "phase": "T7",
+      "source_event_id": "EVT-005",
+      "linked_claim_ids": [
+        "CL-015",
+        "CL-013"
+      ],
+      "status": "PATCHABLE",
+      "verified_items": {
+        "invariants": [
+          "I4"
+        ],
+        "tests": null,
+        "drift_detected": null,
+        "expected_failure_detected": true,
+        "candidate_unchanged": true,
+        "mutated_copy_used": true,
+        "input_fixed": null,
+        "same_structure_except_timestamp": null,
+        "seal_if_evaluated": null,
+        "decision": null
+      },
+      "failures_blocking": [],
+      "evidence_refs": {
+        "candidate_hash": "7475aa01b96a514c4f9d91d6c25156cafdddf1078bd8e7756be6d279176eae22",
+        "replay_status": null,
+        "mutation_trace": null
+      },
+      "issued_at": "2026-04-07T00:04:31Z",
+      "notes": "Receipt reissued with source_event_id link",
+      "receipt_version": 1,
+      "receipt_revision_id": "R-MUTATION-001::v17-baseline",
+      "supersedes_revision_id": null,
+      "receipt_state": "current",
+      "history_boundary": "v17_baseline_from_legacy_current_state"
+    },
+    {
+      "receipt_id": "R-REPLAY-001",
+      "candidate_id": "A-014",
+      "receipt_type": "R-REPLAY",
+      "phase": "T6",
+      "source_event_id": "EVT-009",
+      "linked_claim_ids": [
+        "CL-013",
+        "CL-014"
+      ],
+      "status": "PATCHABLE",
+      "verified_items": {
+        "invariants": [
+          "I4",
+          "I7"
+        ],
+        "tests": null,
+        "drift_detected": null,
+        "expected_failure_detected": null,
+        "candidate_unchanged": true,
+        "mutated_copy_used": null,
+        "input_fixed": {
+          "input_id": "INPUT-REPLAY-001",
+          "payload_sha256": "fe72bab6cd4cfdae0698ac4c4cc7a0d40f5c07fc5419cc97ef6fd91da64d5d92"
+        },
+        "same_structure_except_timestamp": true,
+        "seal_if_evaluated": null,
+        "decision": null
+      },
+      "failures_blocking": [],
+      "evidence_refs": {
+        "candidate_hash": "7475aa01b96a514c4f9d91d6c25156cafdddf1078bd8e7756be6d279176eae22",
+        "replay_status": "VALID",
+        "mutation_trace": null,
+        "structure_hash": "ea24f7e187370a1f03aa61a45014c90ac52554f42ddf22a89827b6b4a6dc1d1b",
+        "prior_event_basis": "EVT-006",
+        "structural_comparison_hash_match": true
+      },
+      "issued_at": "2026-04-07T03:27:42Z",
+      "notes": "Reissued from EVT-009. input_fixed is a real input reference with SHA-256. same_structure_except_timestamp backed by hash equality of nulled structure templates across EVT-006 and EVT-009. candidate_unchanged confirmed by hash identity. Status remains PATCHABLE: artifact-surface replay only; cold-boot runtime execution not performed; fresh_context ceiling not cleared.",
+      "receipt_version": 1,
+      "receipt_revision_id": "R-REPLAY-001::v17-baseline",
+      "supersedes_revision_id": null,
+      "receipt_state": "current",
+      "history_boundary": "v17_baseline_from_legacy_current_state"
+    },
+    {
+      "receipt_id": "R-DRIFT-001",
+      "candidate_id": "A-014",
+      "receipt_type": "R-DRIFT",
+      "phase": "T8",
+      "source_event_id": "EVT-007",
+      "linked_claim_ids": [
+        "CL-013"
+      ],
+      "status": "PATCHABLE",
+      "verified_items": {
+        "invariants": [
+          "I5"
+        ],
+        "tests": null,
+        "drift_detected": false,
+        "expected_failure_detected": null,
+        "candidate_unchanged": null,
+        "mutated_copy_used": null,
+        "input_fixed": null,
+        "same_structure_except_timestamp": null,
+        "seal_if_evaluated": null,
+        "decision": null
+      },
+      "failures_blocking": [],
+      "evidence_refs": {
+        "candidate_hash": "7475aa01b96a514c4f9d91d6c25156cafdddf1078bd8e7756be6d279176eae22",
+        "replay_status": null,
+        "mutation_trace": null
+      },
+      "issued_at": "2026-04-07T00:06:00Z",
+      "notes": "Drift surface-checked; awaiting full population for PASS",
+      "receipt_version": 1,
+      "receipt_revision_id": "R-DRIFT-001::v17-baseline",
+      "supersedes_revision_id": null,
+      "receipt_state": "current",
+      "history_boundary": "v17_baseline_from_legacy_current_state"
+    },
+    {
+      "receipt_id": "R-SEAL-DECISION-001",
+      "candidate_id": "A-014",
+      "receipt_type": "R-SEAL-DECISION",
+      "phase": "I",
+      "source_event_id": "EVT-008",
+      "linked_claim_ids": [
+        "CL-012",
+        "CL-013"
+      ],
+      "status": "PATCHABLE",
+      "verified_items": {
+        "invariants": [
+          "I1",
+          "I2",
+          "I3",
+          "I4",
+          "I5",
+          "I6",
+          "I7"
+        ],
+        "tests": null,
+        "drift_detected": null,
+        "expected_failure_detected": null,
+        "candidate_unchanged": null,
+        "mutated_copy_used": null,
+        "input_fixed": null,
+        "same_structure_except_timestamp": null,
+        "seal_if_evaluated": true,
+        "decision": "NOT_SEALED"
+      },
+      "failures_blocking": [],
+      "evidence_refs": {
+        "candidate_hash": "7475aa01b96a514c4f9d91d6c25156cafdddf1078bd8e7756be6d279176eae22",
+        "replay_status": null,
+        "mutation_trace": null
+      },
+      "issued_at": "2026-04-07T00:06:45Z",
+      "notes": "Seal decision surface-evaluated from PATCHABLE receipts only; no seal granted",
+      "receipt_version": 1,
+      "receipt_revision_id": "R-SEAL-DECISION-001::v17-baseline",
+      "supersedes_revision_id": null,
+      "receipt_state": "current",
+      "history_boundary": "v17_baseline_from_legacy_current_state"
+    }
+  ]
+}

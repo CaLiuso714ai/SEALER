@@ -1,0 +1,133 @@
+{
+  "status": "NOT_SEALED",
+  "seal_admissibility": "A seal is admissible only after true cold-boot execution using only the canonical candidate, mutation-on-copy separation, replay validation, and receipt-backed predicate evaluation.",
+  "required_receipts": [
+    "R-SELFTEST",
+    "R-BATTERY",
+    "R-MUTATION",
+    "R-REPLAY",
+    "R-DRIFT",
+    "R-SEAL-DECISION"
+  ],
+  "fresh_context_requirement": "A truly fresh context must be used for final sealing; self-attested freshness inside a long-running chat is not sufficient proof.",
+  "anti_bloat_rule": {
+    "binding": true,
+    "max_root_files_if_possible": 10,
+    "merge_when_safe": true,
+    "new_root_file_requires_unique_governing_force": true,
+    "note": "Seal audits should treat unnecessary file multiplication as regression risk."
+  },
+  "receipt_templates": {
+    "R-BATTERY": {
+      "receipt_id": "R-BATTERY-001",
+      "phase": "F",
+      "object_id": "string",
+      "tests": {
+        "T1": "PASS|FAIL|PATCHABLE",
+        "T2": "PASS|FAIL|PATCHABLE",
+        "T3": "PASS|FAIL|PATCHABLE",
+        "T4": "PASS|FAIL|PATCHABLE",
+        "T5": "PASS|FAIL|PATCHABLE",
+        "T6": "PASS|FAIL|PATCHABLE",
+        "T7": "PASS|FAIL|PATCHABLE",
+        "T8": "PASS|FAIL|PATCHABLE",
+        "T9": "PASS|FAIL|PATCHABLE",
+        "T10": "PASS|FAIL|PATCHABLE",
+        "T11": "PASS|FAIL|PATCHABLE",
+        "T12": "PASS|FAIL|PATCHABLE"
+      },
+      "failures_blocking": [],
+      "replay_status": "VALID|NONDETERMINISTIC|FAIL",
+      "status": "PASS|FAIL|PATCHABLE"
+    },
+    "R-SELFTEST": {
+      "receipt_id": "R-SELFTEST-001",
+      "phase": "T9",
+      "object_id": "string",
+      "verified_invariants": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6",
+        "I7"
+      ],
+      "failures_blocking": [],
+      "replay_status": "VALID|NONDETERMINISTIC|FAIL",
+      "status": "PASS|FAIL|PATCHABLE"
+    },
+    "R-MUTATION": {
+      "receipt_id": "R-MUTATION-001",
+      "phase": "T7",
+      "object_id": "string-mutated-copy",
+      "verified_invariants": [
+        "I4"
+      ],
+      "failures_blocking": [
+        "F-DEF"
+      ],
+      "replay_status": "VALID|NONDETERMINISTIC|FAIL",
+      "status": "PASS",
+      "expected_failure_detected": true,
+      "candidate_unchanged": true
+    },
+    "R-REPLAY": {
+      "receipt_id": "R-REPLAY-001",
+      "phase": "T6",
+      "object_id": "string",
+      "verified_invariants": [
+        "I4",
+        "I7"
+      ],
+      "failures_blocking": [],
+      "replay_status": "VALID|NONDETERMINISTIC|FAIL",
+      "status": "PASS",
+      "input_fixed": "string",
+      "same_structure_except_timestamp": true
+    },
+    "R-DRIFT": {
+      "receipt_id": "R-DRIFT-001",
+      "phase": "T8",
+      "object_id": "string",
+      "verified_invariants": [
+        "I5"
+      ],
+      "failures_blocking": [],
+      "replay_status": "VALID|NONDETERMINISTIC|FAIL",
+      "status": "PASS|FAIL|PATCHABLE",
+      "drift_detected": false
+    },
+    "R-SEAL-DECISION": {
+      "receipt_id": "R-SEAL-DECISION-001",
+      "phase": "I",
+      "object_id": "string",
+      "verified_invariants": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6",
+        "I7"
+      ],
+      "failures_blocking": [],
+      "replay_status": "VALID|NONDETERMINISTIC|FAIL",
+      "status": "PASS|FAIL|PATCHABLE",
+      "seal_if_satisfied": false,
+      "seal_granted": false
+    }
+  },
+  "execution_spine_status": {
+    "execution_ledger_instantiated": true,
+    "receipts_container_instantiated": true,
+    "receipt_population_started": false
+  },
+  "receipt_container_policy": {
+    "seal_evaluates": "RECEIPTS.json receipts current canonical state view",
+    "receipt_history_root": "RECEIPTS.json receipt_history",
+    "execution_truth_root": "EXECUTION_LEDGER.jsonl",
+    "chronology_truth_root": "LOGBOOK.jsonl",
+    "note": "From v17 onward, receipt revisions must be append-only in receipt_history. Current receipt state may change only as the latest projection."
+  }
+}

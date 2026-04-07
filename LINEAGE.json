@@ -1,0 +1,79 @@
+{
+  "bundle_name": "OMEGA FINALIZATION ENGINE SPINE",
+  "status": "NOT_SEALED",
+  "purpose": "Hash lineage and compact bundle provenance only. Authority lives in AUTHORITY_LEDGER.json. Claims live in CLAIM_REGISTER.json. Execution events live in EXECUTION_LEDGER.jsonl. Receipts live in RECEIPTS.json.",
+  "anti_bloat_rule": {
+    "binding": true,
+    "max_root_files_if_possible": 10,
+    "merge_when_safe": true
+  },
+  "notes": [
+    "Phase 1 is complete.",
+    "Phase 2 claim instantiation and normalization are complete for current scope.",
+    "Execution spine instantiated with starter events and canonical receipt container.",
+    "Do not add new root files unless they carry unique load-bearing force.",
+    "Current root-file count equals anti-bloat ceiling: 10.",
+    "v9: first real receipt appended to RECEIPTS.json and linked to EVT-003 / CL-013 for A-014.",
+    "v13: full six-receipt chain materially present and linked through EVT-008; seal decision evaluated honestly as NOT_SEALED with PATCHABLE status.",
+    "v14: replay evidence upgraded via EVT-009 and reissued R-REPLAY-001; archive remains honestly NOT_SEALED.",
+    "v15: CANON.md patched with canonical invariant definitions and evaluation ceiling rule; archive frozen again.",
+    "v16: appended EVT-010 and replaced R-SELFTEST-001 with corrected I2/I4 mapping; archive frozen again.",
+    "v17: resolved receipt-history governance wrinkle by separating current canonical receipt state from append-only receipt revision history inside RECEIPTS.json."
+  ],
+  "files": [
+    {
+      "filename": "CANON.md",
+      "sha256": "31cc51446dd61efba642462f479028e7846362b1f218df25fe71319ccac8abca",
+      "size_bytes": 8876
+    },
+    {
+      "filename": "AUTHORITY_LEDGER.json",
+      "sha256": "c28a25bf47897a0c191c6dadd8c3053ed3b929b3901dcf52229b15910e7618c0",
+      "size_bytes": 21957
+    },
+    {
+      "filename": "CLAIM_REGISTER.json",
+      "sha256": "6b6be33c632e05984ed659c1c20bc53a0df2db3dfe07024fb4eafbe8558c3acc",
+      "size_bytes": 10349
+    },
+    {
+      "filename": "LINEAGE.json",
+      "sha256": "15dcb54c4b5673c74be36b4eb604673ac349929793156b4ed640ffb8e2d2b198",
+      "size_bytes": 3427
+    },
+    {
+      "filename": "SEAL.json",
+      "sha256": "954390c876cabc7cf93b44b75df7c9cdf851b5b3110f289fc07885e61586b2b4",
+      "size_bytes": 4020
+    },
+    {
+      "filename": "SOURCE_INDEX.json",
+      "sha256": "fd427aca7691b25c78a01d80855443ed6dce27919554ff4411bd2fefd3d44d16",
+      "size_bytes": 2548
+    },
+    {
+      "filename": "LOGBOOK.jsonl",
+      "sha256": "4c826d0c07acb451013e8bb4e5b66d0ddab2a42727156c89ae1fffc56d7086e7",
+      "size_bytes": 7771
+    },
+    {
+      "filename": "MEMORY.json",
+      "sha256": "1de57c7facac1ecebf76095fae24a4eba619f57e4f5f776618920acaa16ea6df",
+      "size_bytes": 4979
+    },
+    {
+      "filename": "EXECUTION_LEDGER.jsonl",
+      "sha256": "47e1e5b23ab8624846de7c5b665e8f83de3d44111f2f588e0f8d55c66fe871c0",
+      "size_bytes": 4633
+    },
+    {
+      "filename": "RECEIPTS.json",
+      "sha256": "b35eaa6ba48eac0ddaee5a68fc46806a4c796bae89aad3e8540a320dfb5d2b4c",
+      "size_bytes": 21639
+    }
+  ],
+  "seal_hash": "909c14807a4d9a0d5a678876585d9f31904843d57c66fa4e8f0c04b5eea3a4c2",
+  "authority_ledger_hash": "c28a25bf47897a0c191c6dadd8c3053ed3b929b3901dcf52229b15910e7618c0",
+  "source_index_hash": "fd427aca7691b25c78a01d80855443ed6dce27919554ff4411bd2fefd3d44d16",
+  "version": "v17"
+}
